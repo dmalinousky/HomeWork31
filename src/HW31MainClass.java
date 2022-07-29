@@ -1,3 +1,4 @@
+import javax.swing.text.html.HTMLDocument;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
@@ -71,6 +72,13 @@ public class HW31MainClass {
         sortedBuyers.addAll(platinumBuyers);
         sortedBuyers.addAll(regularBuyers);
         System.out.println(sortedBuyers);
+
+        // Removing one by one
+        Iterator<Buyer> buyerIterator = sortedBuyers.iterator();
+        while (!(sortedBuyers.isEmpty())) {
+            System.out.println("Was removed:");
+            System.out.println(sortedBuyers.pollFirst());
+        }
     }
 
     // Method to create new buyers
