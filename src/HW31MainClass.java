@@ -5,6 +5,14 @@ import java.util.*;
 
 public class HW31MainClass {
     public static void main(String[] args) throws Exception {
+        
+        // WARNING!
+        // ATTENTION!
+        // Task #3 is here (forgot to pull it in Git the first time): https://github.com/dmalinousky/HomeWork31_3.git
+        // WARNING!
+        // ATTENTION!
+        
+        
         // Hardcoded buyers
         LinkedHashSet<Buyer> buyerHashSet = new LinkedHashSet<>();
 
@@ -84,6 +92,7 @@ public class HW31MainClass {
             System.out.println(sortedBuyers.pollFirst());
         }
     }
+    
 
     // Method to create new buyers
     public static Buyer createBuyer() throws Exception {
@@ -111,4 +120,10 @@ public class HW31MainClass {
         }
         return buyer;
     }
+    
+        // WARNING!
+        // ATTENTION!
+        // Task #3 is here (forgot to pull it in Git the first time): https://github.com/dmalinousky/HomeWork31_3.git
+        // WARNING!
+        // ATTENTION!
 }
