@@ -1,7 +1,7 @@
 public enum Card {
     STANDARD("standard"),
     GOLD("gold"),
-    VIP("v.i.p.");
+    VIP("VIP");
 
     private final String cardType;
 

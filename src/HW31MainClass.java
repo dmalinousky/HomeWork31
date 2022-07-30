@@ -73,10 +73,14 @@ public class HW31MainClass {
         sortedBuyers.addAll(regularBuyers);
         System.out.println(sortedBuyers);
 
-        // Removing one by one
-        Iterator<Buyer> buyerIterator = sortedBuyers.iterator();
+        // Removing VIPs
+        sortedBuyers.removeIf(x -> x.getCardType().equals(Card.VIP));
+        System.out.println("\nThe queue after deleting VIPs:");
+        System.out.println(sortedBuyers);
+
+        // Removing everyone else
         while (!(sortedBuyers.isEmpty())) {
-            System.out.println("Was removed:");
+            System.out.println("Left the queue:");
             System.out.println(sortedBuyers.pollFirst());
         }
     }
@@ -92,7 +96,7 @@ public class HW31MainClass {
         System.out.println("Enter buyer's status.\n" +
                 "1. Standard.\n" +
                 "2. Gold.\n" +
-                "3. V.I.P.");
+                "3. VIP");
         int choice = Integer.parseInt(reader.readLine());
         switch (choice) {
             case 1 :
